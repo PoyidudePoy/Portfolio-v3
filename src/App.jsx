@@ -14,8 +14,8 @@ function App() {
       <div className="flex flex-col font-chakra-petch md:pt-20 lg:w-12/12 lg:pl-40 lg:pr-40 lg:pt-20 lg:ml-auto mr-auto">
 
         <span className=" font-extrabold md:text-3xl lg:text-3xl hidden md:block lg:block md:pl-10 ">
-          <a href="#projects" className=" inline-block md:ml-5 md:mr-10 animate__animated animate__fadeInDown fade1">Projects</a>
-          <a href="#random" className="inline-block md:ml-5 md:mr-10 animate__animated animate__fadeInDown fade2 ">Random</a>
+          <a href="#projects" className="scroll-smooth inline-block md:ml-5 md:mr-10 animate__animated animate__fadeInDown fade1 hover:text-amber-50 hover:border-2 duration-200  hover:p-2 hover:bg-vintage hover:rounded-2xl">Projects</a>
+          <a href="#random" className="inline-block md:ml-5 md:mr-10 animate__animated animate__fadeInDown fade2 hover:text-amber-50 hover:border-2 duration-200  hover:p-2 hover:bg-vintage hover:rounded-2xl">Random</a>
           <a href="#contacts" className=" border-4 p-2 rounded-r-xl rounded-l-xl float-right md:mr-10 hover:bg-vintage duration-300 hover:text-amber-50 animate__animated animate__flipInY  "> Contact Me</a>
 
         </span>
@@ -52,8 +52,8 @@ function App() {
 
       {/* all my projects section */}
       <div id="projects" className="text-xl font-chakra-petch font-extrabold p-6 bg-beige md:pt-15 md:pl-10 lg:p-20 ">
-        <div className="text-4xl p-4 pl-0 text-left md:text-6xl">My own projects 🪬</div>
-        <div className="w-4/5 pb-4 md:text-4xl md:w-5/6 md:pt-2 lg:pb-15">Just a collection of all the random projects i do, some are unfinished, some are in development and some are from way before! 🙆‍♂️</div>
+        <div className="text-4xl p-4 pl-0 text-left md:text-6xl">Projects🪬</div>
+        <div className="w-4/5 pb-4 md:text-4xl md:w-5/6 md:pt-2 md:pb-6 lg:pb-15">Just a collection of all the random projects i do, some are unfinished, some are in development and some are from way before! 🙆‍♂️</div>
         <div className="grid grid-cols-12">
           <div className="col-span-12 p-4 border-5 transition hover:-translate-y-5 duration-500 border-vintage hover:shadow-xs hover:shadow-vintage duration-300 rounded-xl md:col-span-6 lg:col-span-4">
             <a href="https://poyidudepoy.github.io/Guessing-Game/">
