@@ -1,4 +1,9 @@
 
+import me from './assets/me.jpg'
+import custom from './assets/custom.png'
+import library from './assets/library.png'
+import guessing from './assets/guessing.png'
+
 function App() {
   return (
     <div className="bg-beige text--gray-800">
@@ -20,7 +25,7 @@ function App() {
 
         </span>
 
-        <img src="src/assets/me.jpg" className="w-80 h-80 self-center mt-25 rounded-full border-8 border-vintage hover:border-black duration-300 ease-in cursor-pointer md:w-100 md:h-100 md:mt-15 lg:mt-10 "></img>
+        <img src={me} className="w-80 h-80 self-center mt-25 rounded-full border-8 border-vintage hover:border-black duration-300 ease-in cursor-pointer md:w-100 md:h-100 md:mt-15 lg:mt-10 "></img>
         <h1 className="p-8 mt-10 text-3xl text-left font-extrabold items-center md:p-20 md:mt-2 md:text-4xl lg:p-20 lg:mt-5 lg:text-center lg:text-5xl">Hey there, I'm <span className="text-vintage font-extrabold">Clark Kent Neri.</span> i am a student, Take a look at my works here thank you!☺️ </h1>
 
       </div>
@@ -32,7 +37,7 @@ function App() {
           <div className="grid grid-cols-12 mt-8 lg:p-5 lg:w-3/4 lg:justify-self-center ">
             <div className="col-span-12 p-4 transition hover:-translate-x-3 duration-300 md:p-4 md:col-start-2 md:col-end-12  lg:col-start-1 lg:col-end-7 lg:w-auto " >
               <a href="https://github.com/PoyidudePoy/Library-Management-System">
-                <img src="src/assets/library.png" className="h-60 rounded-t-2xl md:w-full   "></img>
+                <img src={library} className="h-60 rounded-t-2xl md:w-full   "></img>
                 <div className="text-4xl bg-gradient-to-r from-purple-light to-purple-mid p-4 rounded-b-2xl text-amber-50">Library Management System
                   <div className="text-xl mt-2">a barcode log way of library system</div>
                 </div>
@@ -40,7 +45,7 @@ function App() {
             </div>
             <div className="col-span-12 p-4 transition hover:translate-x-3 duration-300 md:col-start-2 md:col-end-12 md:p-4 lg:col-start-7 lg:col-end-13 lg:w-auto ">
               <a href="https://github.com/PoyidudePoy/Custom-Built-Document-Request">
-                <img src="src/assets/custom.png" className="h-60 rounded-t-2xl md:w-full "></img>
+                <img src={custom} className="h-60 rounded-t-2xl md:w-full "></img>
                 <div className="text-4xl bg-gradient-to-r from-light-green to-middle-green rounded-b-2xl p-4 text-amber-50">Custom Built Document Request
                   <div className="text-xl mt-2">a system made specifically for requesting documents</div>
                 </div>
@@ -57,7 +62,7 @@ function App() {
         <div className="grid grid-cols-12">
           <div className="col-span-12 p-4 border-5 transition hover:-translate-y-5 duration-500 border-vintage hover:shadow-xs hover:shadow-vintage duration-300 rounded-xl md:col-span-6 lg:col-span-4">
             <a href="https://poyidudepoy.github.io/Guessing-Game/">
-              <img src="src/assets/guessing.png" className="w-20 justify-self-center"></img>
+              <img src={guessing} className="w-20 justify-self-center"></img>
               <h1 className="text-center text-3xl md:text-4xl"> Guessing Game</h1>
               <p className="text-center text-xl md:text-2xl"> a simple discrete math implication game</p>
             </a>
