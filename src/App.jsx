@@ -3,15 +3,57 @@ import me from './assets/me.jpg'
 import custom from './assets/custom.png'
 import library from './assets/library.png'
 import guessing from './assets/guessing.png'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 function App() {
   const [isNavOpen, setIsNavOpen] = useState(false)
+  const [isNavVisible, setIsNavVisible] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY
+      if (scrollY >= 200) {
+        setIsNavVisible(true)
+      } else {
+        setIsNavVisible(false)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
 
     <div className="bg-beige text--gray-800">
 
       {/* this is the header*/}
+
+      <nav
+        
+        className={`fixed hidden bg-vintage mx-auto font-chakra-petch md:block lg:block duration-300 ease shadow left-0 w-full p-4 text-amber-50 z-40 transition-transform ${isNavVisible ? 'translate-y-0' : '-translate-y-full'
+          }`}
+      >
+        <div className="w-12/12 sm:w-11/12 md:w-12/12 lg:w-12/12 lg:ml-20
+         ">
+          <a href="#top" className="kill-link-style xl:mr-6">
+            <span className="inline-block rounded-l-xl rounded-r-xl border-4 border-amber-50 text-amber-50 select-none p-2 text-3xl xl:text-3xl font-extrabold">
+              Home
+            </span>
+          </a>
+          <a href="#projects" className="inline-block kill-link-style ml-6 mr-3 duration-300 text-3xl xl:text-3xl cursor-pointer underline--magical-2 font-extrabold">Projects</a>
+          <a href="#random" className="inline-block kill-link-style ml-6 mr-3 duration-300 text-3xl xl:text-3xl cursor-pointer underline--magical-2 font-extrabold">Random</a>
+          <span className="inline-block ml-6 mr-3 duration-300 float-right text-3xl xl:text-3xl cursor-pointer border-4 rounded-l-xl rounded-r-xl px-4 p-2 border-amber-50 hover:bg-gray-900 hover:text-gray-50 font-extrabold lg:mr-100">Contact Me</span>
+        </div>
+      </nav>
+
+      <header className="h-auto">
+        <div className="fixed w-full h-6 bg-vintage md:h-8"></div>
+        <div className="fixed z-50">
+          {/* ...your existing mobile hamburger + panel code stays here unchanged... */}
+        </div>
+      </header>
+
 
       <header className="h-auto">
         <div className="fixed w-full h-6 bg-vintage md:h-8"></div>
@@ -48,7 +90,7 @@ function App() {
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
-                
+
 
               >
                 <path className="bg-amber-50" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.620" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
