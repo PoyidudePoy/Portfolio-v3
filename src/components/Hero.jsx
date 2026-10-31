@@ -18,7 +18,7 @@ function Hero({onContactClick}) {
         </a>
         <button
           onClick={onContactClick}
-          className="border-4 p-2 rounded-r-xl rounded-l-xl float-right md:mr-10 hover:bg-vintage duration-300 hover:text-amber-50 animate__animated animate__flipInY"
+          className="border-4 p-2 rounded-r-xl rounded-l-xl cursor-pointer float-right md:mr-10 hover:bg-vintage duration-300 hover:text-amber-50 animate__animated animate__flipInY"
         >
           Contact Me
         </button>{" "}

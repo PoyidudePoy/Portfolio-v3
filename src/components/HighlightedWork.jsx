@@ -10,7 +10,7 @@ function HighlightedWork() {
           <div className="col-span-12 p-4 transition hover:-translate-x-3 duration-300 md:p-4 md:col-start-2 md:col-end-12  lg:col-start-1 lg:col-end-7 lg:w-auto " >
             <a href="https://github.com/PoyidudePoy/Library-Management-System">
               <img src={library} className="h-60 rounded-t-2xl md:w-full   "></img>
-              <div className="text-4xl bg-gradient-to-r from-purple-light to-purple-mid p-4 rounded-b-2xl text-amber-50">Library Management System
+              <div className="text-3xl bg-gradient-to-r from-purple-light to-purple-mid p-4 rounded-b-2xl text-amber-50">Library Management System
                 <div className="text-xl mt-2">a barcode log way of library system</div>
               </div>
             </a>
@@ -18,7 +18,7 @@ function HighlightedWork() {
           <div className="col-span-12 p-4 transition hover:translate-x-3 duration-300 md:col-start-2 md:col-end-12 md:p-4 lg:col-start-7 lg:col-end-13 lg:w-auto ">
             <a href="https://github.com/PoyidudePoy/Custom-Built-Document-Request">
               <img src={custom} className="h-60 rounded-t-2xl md:w-full "></img>
-              <div className="text-4xl bg-gradient-to-r from-light-green to-middle-green rounded-b-2xl p-4 text-amber-50">Custom Built Document Request
+              <div className="text-3xl bg-gradient-to-r from-light-green to-middle-green rounded-b-2xl p-4 text-amber-50">Custom Built Document Request
                 <div className="text-xl mt-2">a system made specifically for requesting documents</div>
               </div>
             </a>
